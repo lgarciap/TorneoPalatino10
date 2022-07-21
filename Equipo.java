@@ -24,6 +24,16 @@ public class Equipo {
 	private int rojas;
 	private int faltas;
 	public Equipo() {
+		nombre = "";
+		lugar = 0;
+		tirosEsquina = 0;
+		goles = 0;
+		ganados = 0;
+		perdidos  = 0;
+		tirosAgol  = 0;
+		amarillas = 0;
+		rojas = 0;
+		faltas = 0;
 	}
 	
 	public void setNombre(String newNombre) {
