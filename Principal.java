@@ -10,9 +10,54 @@
 //
 
 
-
+import java.util.Scanner;
 
 public class Principal {
 	public static void main(String[] args) {
+		Torneo palatino = new Torneo();
+		Scanner teclado = new Scanner(System.in);
+		String nombreEq = "";
+		int lugar;
+		int tirosEsquina;
+		int goles;
+		int ganados;
+		int perdidos;
+		int tirosAgol;
+		int amarillas;
+		int rojas;
+		int faltas;
+
+		for (int i = 0; i<5; i++){
+			System.out.println("Bienvenido al sistema de Torneo Palatino");
+			System.out.println("Equipo "+(i+1)+": ");
+			System.out.println("Ingrese el nombre: ");
+			nombreEq = teclado.nextLine();
+			System.out.println("Ingrese el lugar en que quedó el equipo: ");
+			lugar = teclado.nextInt();
+			System.out.println("Ingrese los tiros de esquina del equipo: ");
+			tirosEsquina = teclado.nextInt();
+			System.out.println("Ingrese los goles del equipo: ");
+			goles = teclado.nextInt();
+			System.out.println("Ingrese los juegos ganados del equipo: ");
+			ganados = teclado.nextInt();
+			System.out.println("Ingrese los juegos perdidos del equipo: ");
+			perdidos = teclado.nextInt();
+			System.out.println("Ingrese los tiros a gol del equipo: ");
+			tirosAgol = teclado.nextInt();
+			System.out.println("Ingrese la cantidad de tarjetas amarillas del equipo: ");
+			amarillas = teclado.nextInt();
+			System.out.println("Ingrese la cantidad de tarjetas rojas del equipo: ");
+			rojas = teclado.nextInt();
+			System.out.println("Ingrese la cantidad de faltas del equipo: ");
+			faltas = teclado.nextInt();
+			teclado.nextLine();
+			palatino.llenarEquipo(i+1, nombreEq, lugar, tirosEsquina, goles, ganados, perdidos, tirosAgol, amarillas, rojas, faltas);
+			
+		}
+		System.out.println(palatino.getEquipo1().toString());
+		System.out.println(palatino.getEquipo2().toString());
+		System.out.println(palatino.getEquipo3().toString());
+		System.out.println(palatino.getEquipo4().toString());
+		System.out.println(palatino.getEquipo5().toString());
 	}
 }

@@ -18,24 +18,103 @@ public class Torneo {
 	private Equipo equipo3;
 	private Equipo equipo4;
 	private Equipo equipo5;
+
 	public Torneo() {
+		equipo1 = new Equipo();
+		equipo2 = new Equipo();
+		equipo3 = new Equipo();
+		equipo4 = new Equipo();
+		equipo5 = new Equipo();
 	}
 	
 	public int cantTotalGoles() {
+		return 0;
 	}
 	
 	public int cantTotalTirosEsquina() {
+		return 0;
 	}
 	
 	public int cantTotalAmarillas() {
+		return 0;
 	}
 	
 	public int cantTotalRojas() {
+		return 0;
 	}
 	
 	public void llenarEquipo(int i, String nombre, int lugar, int tirosEsq, int goles, int ganados, int perdidos, int tirosGol, int amarillas, int rojas, int faltas) {
+		if (i == 1){
+			equipo1 = new Equipo(nombre, lugar, tirosEsq, goles, ganados, perdidos, tirosGol, amarillas, rojas, faltas);
+		}
+		if (i == 2){
+			equipo2.setNombre(nombre);
+			equipo2.setLugar(lugar);
+			equipo2.setTirosEsquina(tirosEsq);
+			equipo2.setGoles(goles);
+			equipo2.setGanados(ganados);
+			equipo2.setPerdidos(perdidos);
+			equipo2.setTirosAgol(tirosGol);
+			equipo2.setAmarillas(amarillas);
+			equipo2.setRojas(rojas);
+			equipo2.setFaltas(faltas);
+		}
+		if (i == 3){
+			equipo3 = new Equipo(nombre, lugar, tirosEsq, goles, ganados, perdidos, tirosGol, amarillas, rojas, faltas);
+		}
+		if (i == 4){
+			equipo4 = new Equipo(nombre, lugar, tirosEsq, goles, ganados, perdidos, tirosGol, amarillas, rojas, faltas);
+		}
+		if (i == 5){
+			equipo4 = new Equipo(nombre, lugar, tirosEsq, goles, ganados, perdidos, tirosGol, amarillas, rojas, faltas);
+		}
+			
+		
 	}
 	
+
+	public Equipo getEquipo1() {
+		return this.equipo1;
+	}
+
+	public void setEquipo1(Equipo equipo1) {
+		this.equipo1 = equipo1;
+	}
+
+	public Equipo getEquipo2() {
+		return this.equipo2;
+	}
+
+	public void setEquipo2(Equipo equipo2) {
+		this.equipo2 = equipo2;
+	}
+
+	public Equipo getEquipo3() {
+		return this.equipo3;
+	}
+
+	public void setEquipo3(Equipo equipo3) {
+		this.equipo3 = equipo3;
+	}
+
+	public Equipo getEquipo4() {
+		return this.equipo4;
+	}
+
+	public void setEquipo4(Equipo equipo4) {
+		this.equipo4 = equipo4;
+	}
+
+	public Equipo getEquipo5() {
+		return this.equipo5;
+	}
+
+	public void setEquipo5(Equipo equipo5) {
+		this.equipo5 = equipo5;
+	}
+
+
 	public String toString() {
+		return "";
 	}
 }
