@@ -40,6 +40,7 @@ public class Equipo {
 	}
 	
 	public String getNombre() {
+		return nombre;
 	}
 	
 	public void setLugar(int newlugar) {
