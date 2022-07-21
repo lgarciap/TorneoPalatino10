@@ -54,10 +54,17 @@ public class Principal {
 			palatino.llenarEquipo(i+1, nombreEq, lugar, tirosEsquina, goles, ganados, perdidos, tirosAgol, amarillas, rojas, faltas);
 			
 		}
+		System.out.println("Información de todos los equipos: ");
 		System.out.println(palatino.getEquipo1().toString());
 		System.out.println(palatino.getEquipo2().toString());
 		System.out.println(palatino.getEquipo3().toString());
 		System.out.println(palatino.getEquipo4().toString());
 		System.out.println(palatino.getEquipo5().toString());
+
+		System.out.println("Resumen del Torneo: ");
+		System.out.println("Cantidad de Goles: "+palatino.cantTotalGoles());
+		System.out.println("Cantidad de Tiros de Esquina: "+palatino.cantTotalTirosEsquina());
+		System.out.println("Cantidad de Tarjetas Amarillas: "+palatino.cantTotalAmarillas());
+		System.out.println("Cantidad de Tarjetas Rojas: "+palatino.cantTotalRojas());
 	}
 }

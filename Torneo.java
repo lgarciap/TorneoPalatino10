@@ -28,19 +28,20 @@ public class Torneo {
 	}
 	
 	public int cantTotalGoles() {
-		return 0;
+		return equipo1.getGoles()+equipo2.getGoles()+equipo3.getGoles()+equipo4.getGoles()+equipo5.getGoles();
 	}
 	
 	public int cantTotalTirosEsquina() {
-		return 0;
+		int cantTotalTirosEsquina = equipo1.getTirosEsquina()+equipo2.getTirosEsquina()+equipo3.getTirosEsquina()+equipo4.getTirosEsquina()+equipo5.getTirosEsquina();
+		return cantTotalTirosEsquina;
 	}
 	
 	public int cantTotalAmarillas() {
-		return 0;
+		return equipo1.getAmarillas()+equipo2.getAmarillas()+equipo3.getAmarillas()+equipo4.getAmarillas()+equipo5.getAmarillas();
 	}
 	
 	public int cantTotalRojas() {
-		return 0;
+		return equipo1.getRojas()+equipo2.getRojas()+equipo3.getRojas()+equipo4.getRojas()+equipo5.getRojas();
 	}
 	
 	public void llenarEquipo(int i, String nombre, int lugar, int tirosEsq, int goles, int ganados, int perdidos, int tirosGol, int amarillas, int rojas, int faltas) {
