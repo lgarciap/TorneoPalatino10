@@ -36,67 +36,115 @@ public class Equipo {
 		faltas = 0;
 	}
 	
-	public void setNombre(String newNombre) {
+	public Equipo(String nombre,int lugar, int tirosEsquina, int goles,
+	int ganados, int perdidos, int tirosAgol, int amarillas, int rojas, int faltas){
+		this.nombre = nombre;
+		this.lugar = lugar;
+		this.tirosEsquina = tirosEsquina;
+		this.goles = goles;
+		this.ganados = ganados;
+		this.perdidos = perdidos;
+		this.tirosAgol = tirosAgol;
+		this.amarillas = amarillas;
+		this.rojas = rojas;
+		this.faltas = faltas;
 	}
-	
+
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
-	
-	public void setLugar(int newlugar) {
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
-	
+
 	public int getLugar() {
+		return this.lugar;
 	}
-	
-	public void setTirosEsquina(int newtirosEsquina) {
+
+	public void setLugar(int lugar) {
+		this.lugar = lugar;
 	}
-	
+
 	public int getTirosEsquina() {
+		return this.tirosEsquina;
 	}
-	
-	public void setGoles(int newgoles) {
+
+	public void setTirosEsquina(int tirosEsquina) {
+		this.tirosEsquina = tirosEsquina;
 	}
-	
+
 	public int getGoles() {
+		return this.goles;
 	}
-	
-	public void setGanados(int newganados) {
+
+	public void setGoles(int goles) {
+		this.goles = goles;
 	}
-	
+
 	public int getGanados() {
+		return this.ganados;
 	}
-	
-	public void setPerdidos(int newperdidos) {
+
+	public void setGanados(int ganados) {
+		this.ganados = ganados;
 	}
-	
+
 	public int getPerdidos() {
+		return this.perdidos;
 	}
-	
-	public void setTirosAgol(int newtirosAgol) {
+
+	public void setPerdidos(int perdidos) {
+		this.perdidos = perdidos;
 	}
-	
+
 	public int getTirosAgol() {
+		return this.tirosAgol;
 	}
-	
-	public void setAmarillas(int newamarillas) {
+
+	public void setTirosAgol(int tirosAgol) {
+		this.tirosAgol = tirosAgol;
 	}
-	
+
 	public int getAmarillas() {
+		return this.amarillas;
 	}
-	
-	public void setRojas(int newrojas) {
+
+	public void setAmarillas(int amarillas) {
+		this.amarillas = amarillas;
 	}
-	
+
 	public int getRojas() {
+		return this.rojas;
 	}
-	
-	public void setFaltas(int newfaltas) {
+
+	public void setRojas(int rojas) {
+		this.rojas = rojas;
 	}
-	
+
 	public int getFaltas() {
+		return this.faltas;
+	}
+
+	public void setFaltas(int faltas) {
+		this.faltas = faltas;
 	}
 	
+
+	@Override
 	public String toString() {
+		return "{" +
+			" nombre='" + getNombre() + "'" +
+			", lugar='" + getLugar() + "'" +
+			", tirosEsquina='" + getTirosEsquina() + "'" +
+			", goles='" + getGoles() + "'" +
+			", ganados='" + getGanados() + "'" +
+			", perdidos='" + getPerdidos() + "'" +
+			", tirosAgol='" + getTirosAgol() + "'" +
+			", amarillas='" + getAmarillas() + "'" +
+			", rojas='" + getRojas() + "'" +
+			", faltas='" + getFaltas() + "'" +
+			"}";
 	}
+
 }
